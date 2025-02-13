@@ -359,7 +359,7 @@ void publish_path(const ros::Publisher pubPath) {
     pubPath.publish(path);
 }
 
-// VoxelMap主函数入口，单节点应用
+// api: VoxelMap主函数入口，单节点应用
 int main(int argc, char **argv) {
     ros::init(argc, argv, "voxelMapping");
     ros::NodeHandle nh;
@@ -368,7 +368,7 @@ int main(int argc, char **argv) {
     double angle_cov = 0.0;
     std::vector<double> layer_point_size;
 
-    // cummon params
+    // common params
     nh.param<string>("common/lid_topic", lid_topic, "/livox/lidar");
     nh.param<string>("common/imu_topic", imu_topic, "/livox/imu");
 
