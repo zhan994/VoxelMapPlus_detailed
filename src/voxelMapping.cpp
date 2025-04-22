@@ -8,7 +8,8 @@
 #include <fstream>
 #include <geometry_msgs/Vector3.h>
 #include <image_transport/image_transport.h>
-#include <livox_ros_driver/CustomMsg.h>
+// #include <livox_ros_driver/CustomMsg.h>
+#include "CustomMsg.h"
 #include <math.h>
 #include <mutex>
 #include <nav_msgs/Odometry.h>
